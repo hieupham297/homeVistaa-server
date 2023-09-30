@@ -45,11 +45,13 @@ const HouseSchema = new mongoose.Schema(
       maxlength: 60,
       require: true,
       unique: true,
-    }
+    },
   },
   {
     collection: "houses",
   }
 );
 
-mongoose.model("House", HouseSchema);
+const houseModel = mongoose.model("House", HouseSchema);
+
+module.exports = houseModel;
