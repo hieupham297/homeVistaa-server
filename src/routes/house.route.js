@@ -4,8 +4,8 @@ const houseController = require("../controllers/house.controller");
 const router = express.Router();
 
 router.get("/getAllHouses", houseController.getAllHouses);
-router.get("/house/:slug", houseController.houseDetail);
-router.get("/house/:slug/playpage", houseController.play3DView);
+router.get("/houseDetail/:slug", houseController.houseDetail);
+router.get("/houseDetail/:slug/playpage", houseController.play3DView);
 router.get("/searchByName", houseController.searchByName);
 router.get("/sortByPrice", houseController.sortByPrice);
 router.get("/filterByArea", houseController.filterByArea);
